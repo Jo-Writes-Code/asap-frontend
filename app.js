@@ -221,4 +221,13 @@ let newArray2 = array2.map((element) => 'hello world')
 
 console.log(newArray2)
 
-// let usDollars 
+let usDollars = [1000, 750, 1200, 675, 900]
+
+// let auDollars = usDollars.map((element) => element * 1.5)
+let auDollars = []
+
+for (i = 0; i < usDollars.length; i++) {
+  auDollars.push(usDollars[i] * 1.5)
+}
+
+console.log(auDollars)
