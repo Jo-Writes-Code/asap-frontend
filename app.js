@@ -200,34 +200,52 @@ for (i = 0; i < ages.length; i++) {
   ages[i] <= 18 && console.log(ages[i]);
 }
 
-filteredAges = []
+filteredAges = [];
 for (i = 0; i < ages.length; i++) {
   ages[i] <= 18 && filteredAges.push(ages[i]);
 }
 
 console.log(filteredAges);
 
-
 // Maps
 
-let array2 = [1, 2, 3, 4, 5]
+let array2 = [1, 2, 3, 4, 5];
 
 // let newArray2 = array2.map((element) => {
 //   console.log(element)
 //   return 'hello world'
 // })
 
-let newArray2 = array2.map((element) => 'hello world')
+let newArray2 = array2.map((element) => "hello world");
 
-console.log(newArray2)
+console.log(newArray2);
 
-let usDollars = [1000, 750, 1200, 675, 900]
+let usDollars = [1000, 750, 1200, 675, 900];
 
 // let auDollars = usDollars.map((element) => element * 1.5)
-let auDollars = []
+let auDollars = [];
 
 for (i = 0; i < usDollars.length; i++) {
-  auDollars.push(usDollars[i] * 1.5)
+  auDollars.push(usDollars[i] * 1.5);
 }
 
-console.log(auDollars)
+console.log(auDollars);
+
+let users = [];
+
+function signUp(user) {
+  users.push(user);
+}
+
+signUp({
+  email: "example@gmail.com",
+  password: "123",
+  name: "John",
+  discord: "@John123",
+  subscription: "tier1",
+  lessonsCompleted: [1, 2, 3, 4, 5]
+});
+
+console.log(users);
+
+console.log(document)
