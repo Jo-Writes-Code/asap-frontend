@@ -81,11 +81,144 @@ let isRaining = true;
 isRaining ? console.log("Its raining.") : console.log("Its not raining.");
 let str = registeredAge >= 18 && hasId ? "Enter.." : "Dont Enter.";
 
-console.log(str)
+console.log(str);
 
-let userLoggedIn = false
-let userHasMembership = true
+let userLoggedIn = false;
+let userHasMembership = true;
 
-let permission = (userLoggedIn && userHasMembership) ? "show video." : "dont show video.";
+let permission =
+  userLoggedIn && userHasMembership ? "show video." : "dont show video.";
 
-console.log(permission)
+console.log(permission);
+
+// Loops
+
+// let counter = 1;
+
+// while (counter <= 20) {
+//   console.log(counter);
+//   counter += 1;
+// }
+
+// console.log('loop finished.')
+
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+for (i = 1; i <= 15; i++) {
+  if (i % 2 === 0) {
+    console.log(`${i} - FRONTEND`);
+  } else if (i % 5 === 0) {
+    console.log(`${i} - ASAP FRONTEND`);
+  } else {
+    console.log(`${i} - ASAP`);
+  }
+}
+
+let text = "ASAP FRONTEND";
+
+for (i = 0; i < text.length; i++) {
+  console.log(text[i]);
+}
+
+let ex1Count = 0;
+
+while (ex1Count < text.length) {
+  console.log(text[ex1Count]);
+  ex1Count++;
+}
+
+// Functions
+
+// Function Declaration
+function greetUser(name, time) {
+  console.log(`Hello ${name}, its ${time}.`);
+}
+
+// Call the function
+greetUser("John", "10:00pm");
+
+function main() {
+  console.log("Hello World");
+  return "ASAP FRONTEND";
+}
+
+console.log(main());
+
+// Currency Converter 2.0
+
+// function convertUsdTOAud(usd) {
+//   console.log(usd * 1.5);
+// }
+
+// Arrow Function
+const convertUsdTOAud = (usd) => {
+  return usd * 1.5;
+};
+
+console.log(convertUsdTOAud(1200));
+
+// Arrays
+let array = ["Apples", "Bananas", "Eggs", "Milk"];
+
+// Mutating Method
+array.push("Bread");
+
+// variable equated as arrow function
+// const variableName = () => {}
+
+// Non-mutating method
+let filteredArray = array.filter((element) => {
+  element.length > 4 && console.log(element);
+  return element.length > 4;
+  // if (element.length > 4) {
+  //   return true
+  // }
+});
+
+// SHORTHAND
+// let filteredArray = array.filter((element) => element.length > 4)
+
+// call-back function passed in as argument
+
+console.log(filteredArray);
+console.log(array); // Whole array
+console.log(array[0]); // First element
+console.log(array[array.length - 1]); // Last element
+
+let ages = [27, 31, 18, 22, 15];
+
+// let filteredAges = ages.filter(element => element <= 18)
+let filteredAges = ages.filter((element) => {
+  return element <= 18;
+});
+
+console.log(filteredAges);
+
+for (i = 0; i < ages.length; i++) {
+  ages[i] <= 18 && console.log(ages[i]);
+}
+
+filteredAges = []
+for (i = 0; i < ages.length; i++) {
+  ages[i] <= 18 && filteredAges.push(ages[i]);
+}
+
+console.log(filteredAges);
+
+
+// Maps
+
+let array2 = [1, 2, 3, 4, 5]
+
+// let newArray2 = array2.map((element) => {
+//   console.log(element)
+//   return 'hello world'
+// })
+
+let newArray2 = array2.map((element) => 'hello world')
+
+console.log(newArray2)
+
+// let usDollars 
