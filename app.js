@@ -243,9 +243,30 @@ signUp({
   name: "John",
   discord: "@John123",
   subscription: "tier1",
-  lessonsCompleted: [1, 2, 3, 4, 5]
+  lessonsCompleted: [1, 2, 3, 4, 5],
 });
 
 console.log(users);
 
-console.log(document)
+
+// DOM Manipulation
+
+// Changing HTML & CSS
+document.querySelector("body").style.backgroundColor = "#0e0e0e";
+document.querySelector("body").style.color = "darkgray";
+console.log(document.querySelector("body").style.backgroundColor);
+
+document.querySelector('#heading').innerHTML += " [ASAP FRONTEND]"
+
+console.log(document.querySelector('#heading'));
+// console.log(document.getElementsByClassName('heading'));
+// console.log(document.getElementsByTagName('heading'));
+
+function changeButtonToGreen() {
+  console.log('Change button to green')
+  document.querySelector('body').style.backgroundColor = "green"
+}
+
+function toggleSidebar() {
+  document.querySelector('body').classList.toggle('open')
+}
